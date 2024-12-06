@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로엔코리아</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<style>
+    .app .s1 {
+        position: relative;
+        width: 100%;
+        padding-bottom: 35%;
+            }
+
+            .app .s1 .s1_bg{
+                width: 100%;
+                position: absolute;
+            }
+
+    .app .s1 .s1_ic1 {
+        position: relative;
+        top: 10%;
+        left: 10%;
+    }
+
+    .app .s1 .s1_ic2{
+        position: absolute;
+        right: 20%;
+        top: 20%;
+    }
+
+    .app .s1 .s1_logo {
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    .app .s1 p{
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: -0.8px;
+        line-height: 1.3;
+        font-weight: 700 ;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 10px;
+    }
+
+    .app .s1 .s1_phone{
+        position: absolute;
+        left: 44%;
+        bottom: -26%;
+        transform: translate(-50%, -50%);
+    }
+    /* app section1 end */
+
+    /* app 공통 요소 */
+    .app .txt_wrap{
+        text-align: center;
+        padding-top: 5.5rem;
+    }
+
+    .app .txt_wrap p {
+        color: #002751;
+        font-size: 25px;
+        letter-spacing: -0.4px;
+        font-weight: 500;
+    }
+
+    .app .txt_wrap h2{
+        color: #353535;
+        font-size: 55px;
+        font-weight: 800;
+        line-height: 1.3;
+        letter-spacing: -0.4px;
+        padding-block: 0.5rem 3rem;
+    }
+
+    .app .txt_wrap .fs20{
+        font-size: 20px;
+        color: #595959;
+        letter-spacing: -0.8px;
+        line-height: 1.7;
+    }
+    /* app 공통 요소 */
+
+    .app .s2{
+        position: relative;
+        padding-bottom: 7%;
+    }
+
+    .app .s2 .flex_wrap{
+        width: 100%;
+        max-width: 1490px;
+        padding-inline: 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 7%;
+    }
+
+    .app .s2 .flex_item{
+        position: relative;
+        filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.2));
+        border-radius: 2.5rem;
+        overflow: hidden;
+    }
+
+    .app .s2 .flex_item img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .app .s2 .flex_item .cont{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .app .s2 .flex_item .cont p{
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: -0.4px;
+        font-weight: 700;
+    }
+
+    .app .s2 .flex_item .cont h4{
+        color: #fff;
+        font-size: 40px;
+        letter-spacing: -0.4px;
+        font-weight: 800;
+    }
+
+    .app .s2 .s2_bg{
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        z-index: -1;
+    }
+
+    .app .s3{
+        padding-block: 3.8% 3.5%;
+    }
+
+    .app .s3 .flex_wrap{
+        width: 100%;
+        max-width: 1080px;
+        padding-inline: 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6.8%;
+    }
+
+    .app .s3 .flex_wrap .left p{
+        color: #002751;
+        font-size: 20px;
+        letter-spacing: -0.4px;
+        font-weight: 500;
+    }
+
+    .app .s3 .flex_wrap .left h3{
+        color: #353535;
+        font-size: 45px;
+        letter-spacing: -0.4px;
+        padding-block: 20px 25px;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+
+    .app .s3 .flex_wrap .left .fs18{
+        color: #606060;
+        font-size: 18px;
+        letter-spacing: -0.8px;
+        font-weight: 500;    
+        line-height: 1.6;
+    }
+
+    .app .s3 .flex_wrap:nth-child(2){
+        margin-top: 3rem;
+    }
+
+    .app .s3 .flex_wrap:nth-child(3){
+        flex-direction: row-reverse;
+    }
+
+    .app .s4{
+        width: 100%;
+        position: relative;
+    }
+
+    .app .s4 .s4_bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    .app .s4 .txt_wrap p{
+        color: #71bcff;
+        font-size: 25px;
+        letter-spacing: -0.4px;
+        font-weight: 500;
+    }
+
+    .app .s4 .txt_wrap .bold{
+        font-weight: 700;
+        color: #71bcff;
+    }
+
+    .app .s4 .txt_wrap h2{
+        color: #fff;
+        font-size: 55px;
+        letter-spacing: -0.4px;
+        padding-block: 0.2rem;
+        font-weight: 800;
+    }
+
+    .app .s4 .flex_wrap{
+    max-width: 1380px;
+    padding-inline: 20px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 1rem;
+    }
+
+    .app .s4 .flex_wrap .left{
+        position: relative;
+    }
+
+    .app .s4 .flex_wrap .left .device_bg{
+        position: absolute;
+        top: 0;
+        /* z-index: -1; */
+        filter: blur(72px);
+        mix-blend-mode: overlay;
+    }
+
+    .app .s4 .flex_wrap .right{
+        margin-top: 2.5rem;
+        border: 2px solid rgba(255,255,255,0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 29px;
+        padding-block: 50px;
+        border-radius: 2rem;
+    }
+
+    .app .s4 .flex_wrap .right img{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .app .s4 .flex_wrap .right .mark_center{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .app .s4 .flex_wrap .right .mark_center img:nth-child(1){
+        filter: drop-shadow(0px 0px 15px rgba(0,0,0,0.2));
+    }
+
+    .app .s4 .flex_wrap .right p {
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: -0.4px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    .s5 .app .txt_wrap {
+        margin-top: 3rem;
+    }
+
+    .s5 .txt_wrap{
+        padding-top: 3.5rem;
+    }
+
+    .s5 .inner{
+        width: 100%;
+        max-width: 1440px;
+        padding-inline: 20px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .s5 .inner .m_device{
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .s5 .inner .grid_wrap{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 8%;
+    }
+    
+    .s5 .inner .grid_item img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .s5 .inner .grid_item:nth-child(3){
+        grid-column: 1/3;
+        display: flex;
+        align-items: center;
+    }
+
+    .s5 .inner .grid_item:nth-child(3) img{
+        margin: 0;
+        margin-left: 12rem;
+        margin-top: -5rem;
+    }
+
+    .s5 .inner .grid_item:nth-child(3) h5{
+        text-align: left;
+    }
+
+    .s5 .inner .grid_item:nth-child(3) p{
+        text-align: left;
+    }
+
+    .s5 .inner .grid_item h5{
+        color: #444;
+        font-size: 25px;
+        letter-spacing: -0.8px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .s5 .inner .grid_item p{
+        color: #444;
+        font-size: 20px;
+        letter-spacing: -0.8px;
+        line-height: 1.6;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .s6{
+        background: url(./1x/app/app_bg3.jpg) no-repeat center;
+        background-size: cover;
+        margin-bottom: 96px;
+        margin-top: 5rem;
+    }
+
+    .s6 .flex_wrap{
+        width: 100%;
+        padding-inline: 373px 261px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .s6 .flex_wrap .left h2{
+        color: #fff;
+        font-size: 45px;
+        letter-spacing: -0.4px;
+        font-weight: 800;
+        line-height: 1.3;
+        margin-bottom: 47px;
+    }
+
+    .s6 .flex_wrap .btn_wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .s6 .flex_wrap .btn_wrap .btn{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 29px;
+        letter-spacing: -0.8px;
+        font-weight: 700;
+        border-radius: 3rem;
+        border: 1px solid #fff;
+        background-color: transparent;
+        filter: drop-shadow(0px 0px 6.8px rgba(40,91,69,0.5));
+    }
+
+    .s6 .flex_wrap .btn_wrap .store p{
+        color: #fff;
+        filter: none;
+    }
+
+    .s6 .flex_wrap .btn_wrap .store{
+        width: 260px;
+        height: 68px;
+    }
+
+    .s6 .flex_wrap .btn_wrap .homepage{
+        width: 324px;
+        height: 68px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="burgur_menu_wrap">
+            <div class="menu_wrap">
+                <div class="">
+                    <p>COMPANY</p>
+                    <a href="sub1_1.html" class="">CEO 인사말</a>
+                    <a href="sub1_2.html" class="">사업분야 · 회사 비전</a>
+                    <!-- <a href="sub1_3.html" class="">회사 비전</a> -->
+                    <a href="sub1_4.html" class="">오시는 길</a>
+                </div>
+                <div class="">
+                    <p onclick="alert('ready'); return false;">SERVICE</p>
+                    <a href="sub2_1.html" class="" onclick="alert('ready'); return false;">사업수행 실적</a>
+                </div>
+                <div class="">
+                    <p>PRODUCT</p>
+                    <a href="sub3_1.html" class=""onclick="alert('ready'); return false;">제품소개</a>
+                    <a href="sub3_2.html" class=""onclick="alert('ready'); return false;">안전발걸음</a>
+                </div>
+                <div class="">
+                    <p onclick="alert('ready'); return false;">CONTACT</p>
+                    <a href="sub4_1.html" class=""onclick="alert('ready'); return false;">고객센터</a>
+                    <a href="sub4_2.html" class=""onclick="alert('ready'); return false;">협력문의</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_wrap">
+            <h1>
+                <a href="index.html"><img src="1x/logo.png" alt="ABLECNT"></a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="sub1_1.html">COMPANY</a>
+                        <ul class="depth">
+                            <li><a href="sub1_1.html">CEO 인사말</a></li>
+                            <li><a href="sub1_2.html">사업분야 · 회사 비전</a></li>
+                            <!-- <li><a href="sub1_3.html">회사 비전</a></li> -->
+                            <li><a href="sub1_4.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub2_1.html" onclick="alert('ready'); return false;">SERVICE</a>
+                        <ul class="depth">
+                            <li><a href="sub2_1.html"onclick="alert('ready'); return false;">사업수행 실적</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub3_1.html">PRODUCT</a>
+                        <ul class="depth">
+                            <li><a href="sub3_1.html">제품소개</a></li>
+                            <li><a href="app.html">안전발걸음</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub4_1.html" onclick="alert('ready'); return false;">CONTACT</a>
+                        <ul class="depth">
+                            <li><a href="sub4_1.html"onclick="alert('ready'); return false;">고객센터</a></li>
+                            <li><a href="sub4_2.html"onclick="alert('ready'); return false;">협력문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="r_menu">
+
+                <input type="checkbox" id="ham-toggle" hidden="">
+                <label for="ham-toggle" class="ham">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main class="app" id="app">
+        <section class="s1">
+            <img src="1x/app/app_bg.jpg" alt="" class="s1_bg">
+            <img src="1x/app/ic/ic_item1.png" alt="위치" class="s1_ic1">
+            <img src="1x/app/ic/ic_item2.png" alt="종" class="s1_ic2">
+            <img src="1x/app/ic/ic_logo.png" alt="브랜드" class="s1_logo">
+            <p>우리 가족의 안전을 위한 단 하나의 어플<br>로엔코리아의<안전발걸음>을 소개합니다.</p>
+            <img src="1x/app/phone.png" alt="핸드폰" class="s1_phone">
+        </section>
+
+        <section class="s2">
+            <div class="txt_wrap">
+                <p>INTRODUCE</p>
+                <h2>언제 어디서나 서로를 이어주는<br>든든한 가족 안심 어플</h2>
+                <p class="fs20">
+                    안전발걸음은 언제 어디서나 가족의 안전을 지키고 서로를 연결해주는 믿음직한 어플리케이션입니다.<br>
+                    실시간 위치 공유, 긴급 알림, 그리고 안전 확인 기능을 통해 가족 간의 소통과 안심을 지원하며, 일상의 편리함과 마음의 평화를 동시에 제공합니다.
+                </p>
+            </div>
+
+            <div class="flex_wrap">
+                <div class="flex_item">
+                    <img src="1x/app/card_bg1.jpg" alt="노랑">
+                    <div class="cont">
+                        <p>실시간 위치</p>
+                        <img src="1x/app/ic/ic_loc.png" alt="location" class="icon">
+                        <h4>확인하고</h4>
+                    </div>
+                </div>
+
+                <div class="flex_item">
+                    <img src="1x/app/card_bg2.jpg" alt="분홍">
+                    <div class="cont">
+                        <p>이동 로그</p>
+                        <img src="1x/app/ic/ic_map.png" alt="map" class="icon">
+                        <h4>따라가고</h4>
+                    </div>
+                </div>
+
+                <div class="flex_item">
+                    <img src="1x/app/card_bg3.jpg" alt="파랑">
+                    <div class="cont">
+                        <p>횡단보도 알림</p>
+                        <img src="1x/app/ic/ic_light.png" alt="light" class="icon">
+                        <h4>안전하고</h4>
+                    </div>
+                </div>
+
+                <div class="flex_item">
+                    <img src="1x/app/card_bg4.jpg" alt="초록">
+                    <div class="cont">
+                        <p>스케줄도</p>
+                        <img src="1x/app/ic/ic_memo.png" alt="memo" class="icon">
+                        <h4>관리하고</h4>
+                    </div>
+                </div>
+            </div>
+
+            <img src="1x/app/app_s2_bg.jpg" alt="그물" class="s2_bg">
+        </section>
+        <!-- section 2 end -->
+
+        <section class="s3">
+            <div class="txt_wrap">
+                <p>INTRODUCE</p>
+                <h2>왜 안전발걸음을 사용해야 할까요?</h2>
+            </div>
+
+            <div class="flex_wrap">
+                <div class="left">
+                    <p>STEP1</p>
+                    <h3>실시간 위치 확인,<br>이동 경로까지 확인해요.</h3>
+                    <p class="fs18">
+                        실시간 위치 정보를 수집하고 타임라인별로 저장하여<br>
+                        피보호자의 이동 경로를 확인할 수 있습니다.
+                    </p>
+                </div>
+
+                <div class="right">
+                    <img src="1x/app/flx_item1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="flex_wrap">
+                <div class="left">
+                    <p>STEP2</p>
+                    <h3>횡단보도를 안전하게<br>통과하는지 확인해요.</h3>
+                    <p class="fs18">
+                        피보호자가 횡단보도를 안전하게 통과하면 알림이 전송됩니다.<br>
+                        뿐만 아니라 장소 등록을 통해, 피보호자가<br>
+                        지정된 장소를 통과하면 보호자에게 알림이 전송됩니다.
+                    </p>
+                </div>
+
+                <div class="right">
+                    <img src="1x/app/flx_item2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="flex_wrap">
+                <div class="left">
+                    <p>STEP3</p>
+                    <h3>스케줄도 안전발걸음에서<br>한번에 확인해요.</h3>
+                    <p class="fs18">
+                        병원, 학원, 방학, 식사 약속 ···<br>
+                        일일이 따로 관리할 필요 없이,<br>
+                        안전발걸음에서 한번에 관리해요!
+                    </p>
+                </div>
+
+                <div class="right">
+                    <img src="1x/app/flx_item3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- section 3 end -->
+
+        <section class="s4">
+            <img src="1x/app/app_bg2.jpg" alt="" class="s4_bg">
+            <div class="txt_wrap">
+                <p>아이길과 함께하는 <span class="bold">안전발걸음 AI 기술</span></p>
+                <h2>사고 판독 DEEP LEARNING</h2>
+            </div>
+
+            <div class="flex_wrap">
+                <div class="left">
+                    <img src="1x/app/device1.png" alt="핸드폰기기" class="deep">
+                    <img src="1x/app/device_bg.png" alt="가우시안블러" class="device_bg">
+                </div>
+
+                <div class="right">
+                    <img src="1x/app/ic/ic_mark.png" alt="마크" class="mark">
+                    <div class="mark_center">
+                        <img src="1x/app/ic/ic_guardian.png" alt="">
+                        <img src="1x/app/ic/ic_protect.png" alt="">
+                    </div>
+                    <p>
+                        아이길 디바이스는 AI를 기반으로 한 각종 센서를 통해<br>
+                        충돌, 사고, 비활동을 감지하고 보호자에게 알려줍니다.<br>
+                        위험 상황을 실시간으로 파악하여 신속한 대응이 가능하며,<br>
+                        사고를 사전에 예방할 수 있습니다. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- section 04 end -->
+
+        <section class="s5">
+            <div class="txt_wrap">
+                <p>EYEGIL</span></p>
+                <h2>오직, 아이들의 안전을 위한 디바이스</h2>
+                <p class="fs20">
+                    아이길 디바이스는 안전발걸음과 연동되어 아이들의 안전한 하루하루를 지켜줍니다.<br>아이길 디바이스와 안전발걸음 어플의 결합은 보호자에게는 안심을, 어린이에게는 자유로운 활동을 보장하며,<br>현대 사회에서 안전한 이동 환경을 조성하는 혁신적인 솔루션을 제공합니다. 
+                </p>
+            </div>
+
+            <div class="inner">
+                <img src="1x/app/device2.png" alt="" class="m_device">
+    
+                <div class="grid_wrap">
+                    <div class="grid_item">
+                        <img src="1x/app/eyegil1.png" alt="led기능">
+                        <h5>LED 기능:</h5>
+                        <P>어둠 속에서도, 멀리서도 눈에 띄는<br>LED 기능으로 야간 어린이 교통사고를 예방</P>
+                    </div>
+    
+                    <div class="grid_item">
+                        <img src="1x/app/eyegil2.png" alt="파손">
+                        <h5>파손에 강한 소재:</h5>
+                        <P>활동량이 많은 아이들을 위해<br>철보다 가볍고 강화유리 약 150배 정도의<br>내구성을 가진 소재 사용</P>
+                    </div>
+    
+                    <div class="grid_item">
+                        <img src="1x/app/eyegil3.png" alt="빔">
+                        <div>
+                            <h5>아이길 빔프로젝터:</h5>
+                            <P>더 눈에 띄고, 더 명확한 빔프로젝터 기능으로<br>흐른 날에도, 어두운 날에도, 맑은 날에도,<br>어떠한 실내·외 환경에서도 안전하게</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- section 05 ing -->
+
+        <section class="s6" style="overflow: visible;">
+            <div class="flex_wrap">
+                <div class="left">
+                    <h2>
+                        우리 가족을 위한 안전발걸음,<br>더 자세히 알고 싶다면?
+                    </h2>
+                    <div class="btn_wrap">
+                        <div class="store btn">
+                            <img src="1x/app/ic/ic_apple.png" alt="">
+                            <p style="margin-left: 0.5rem;">
+                                APP STORE
+                            </p>
+                        </div>
+
+                        <div class="homepage btn">
+                            <img src="1x/app/ic/ic_page.png" alt="">
+                            <p style="color: #fff; margin-left: 0.5rem;">
+                                안전발걸음 홈페이지
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right" style="margin-top: -4rem;">
+                    <img src="1x/app/app_hand.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <footer>
+   <div class="footer_inner">
+    <div class="btn_wrap">
+     <div class="qlink">
+      <a href="app.html">
+       <img src="1x/qlink.png" alt="사이트바로가기" />
+      </a>
+     </div>
+     <div class="top">
+      <a href="#">
+       <img src="1x/top1.png" alt="gotop" />
+      </a>
+     </div>
+    </div>
+    <div class="f_left">
+     <img src="1x/logo.png" alt="에이블씨엔티" />
+     <div class="f_info">
+      <p><span class="m">CEO </span>우동주</p>
+      <p>
+       <span class="m">본사 </span>부산광역시 강서구 과학산단1로 60번길 2B동
+       207호
+      </p>
+      <p>
+       <span class="m">기술연구소 </span>부산광역시 강서구 과학산단1로 60번길 30
+       7동 601호
+      </p>
+      <div class="contact">
+       <p><span class="m">TEL </span> 051-123-456</p>
+       <p><span class="m">FAX </span> 051-123-456</p>
+       <p><span class="m">E-MAIL </span> loenkorea@loen.com</p>
+      </div>
+     </div>
+    </div>
+    <div class="f_right">
+     <ul>
+      <li>
+       <h5>COMPANY</h5>
+       <a href="sub1_1.html">CEO 인사말</a>
+       <a href="sub1_2.html">사업분야 · 회사 비전</a>
+       <a href="sub1_3.html" >회사 비전</a>
+       <a href="sub1_4.html">오시는길</a>
+      </li>
+
+      <li>
+       <h5>SERVICE</h5>
+       <a href="#" onclick="alert('ready'); return false;">사업수행 실적</a>
+      </li>
+
+      <li>
+       <h5>PRODUCT</h5>
+       <a href="sub3_1.html">제품소개</a>
+       <a href="app.html">안전발걸음</a>
+      </li>
+
+      <li>
+       <h5 >CONTACT</h5>
+       <a href="#" onclick="alert('ready'); return false;">고객센터</a>
+       <a href="#" onclick="alert('ready'); return false;">협력문의</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="copy">
+    <p>Copyrights © ABLECNT Co., Ltd. All rights reserved.</p>
+   </div>
+  </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script></script>
+</body>
+
+</html>

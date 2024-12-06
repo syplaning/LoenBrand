@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>로엔코리아</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/sub.css" />
+  <link
+   rel="stylesheet"
+   as="style"
+   crossorigin
+   href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ </head>
+
+ <style>
+  .sub_1_4 .s2 {
+   width: 100%;
+   position: relative;
+   padding-block: 14.2%;
+  }
+
+  .sub_1_4 .bg .bg1 {
+   position: absolute;
+   left: -10%;
+   top: -10%;
+   z-index: -1;
+  }
+
+  .sub_1_4 .bg .bg2 {
+   position: absolute;
+   left: 25%;
+   bottom: -20%;
+   z-index: -1;
+  }
+
+  .sub_1_4 .flex_wrap {
+   display: flex;
+   width: 100%;
+   max-width: 1490px;
+   margin: 0 auto;
+   align-items: center;
+   justify-content: space-between;
+  }
+
+  .sub_1_4 .left .tit p {
+   color: #002751;
+   font-size: 25px;
+   font-weight: 500;
+   line-height: 1.2;
+   letter-spacing: -0.4px;
+  }
+
+  .sub_1_4 .left .tit h2 {
+   color: #353535;
+   font-size: 76px;
+   font-weight: 800;
+   line-height: 1.5;
+   letter-spacing: -0.4px;
+  }
+
+  .sub_1_4 .tab_wrap {
+   display: flex;
+   gap: 2rem;
+   margin-bottom: 30px;
+  }
+
+  .sub_1_4 .tab {
+   font-size: 25px;
+   padding-inline: 1.681rem;
+   padding-block: 0.5rem;
+   border-radius: 1rem;
+   color: #969696;
+   font-weight: 500;
+  }
+
+  .sub_1_4 .tab_on {
+   background-color: #002751;
+   color: #fff;
+   filter: drop-shadow(0px 0px 10px rgba(43, 128, 204, 0.2));
+  }
+
+  .sub_1_4 .left h3 {
+   color: #353535;
+   font-weight: 800;
+   font-size: 49px;
+   letter-spacing: -0.4px;
+   line-height: 1.5;
+   margin-bottom: 3.4rem;
+  }
+
+  .sub_1_4 .left .skyblue {
+   position: relative;
+   color: #002751;
+  }
+
+  .sub_1_4 .left .skyblue:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 23px;
+   background-color: #77abdb;
+   opacity: 0.2;
+   z-index: -1;
+  }
+
+  .sub_1_4 .left .info p {
+   color: #4f4f4f;
+   font-size: 25px;
+   font-weight: 500;
+   letter-spacing: -0.4px;
+   line-height: 1.3;
+   position: relative;
+  }
+
+  .sub_1_4 .left .info > p:nth-child(1):after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 1px;
+   background-color: #dbdbdb;
+   margin-top: 0.5rem;
+  }
+
+  .sub_1_4 .left .info .number p {
+   display: inline-block;
+   position: relative;
+   padding-block: 0.8rem 0.5rem;
+  }
+
+  .sub_1_4 .left .info .number:after {
+   content: "";
+   display: block;
+   width: 80%;
+   height: 1px;
+   background-color: #dbdbdb;
+  }
+
+  .sub_1_4 .left .info .way {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+   padding-block: 2.2rem 0;
+  }
+
+  .sub_1_4 .right iframe {
+   width: 808px;
+   height: 581px;
+   border-radius: 3rem;
+   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
+  }
+ </style>
+
+ <body>
+    <header>
+        <div class="burgur_menu_wrap">
+            <div class="menu_wrap">
+                <div class="">
+                    <p>COMPANY</p>
+                    <a href="sub1_1.html" class="">CEO 인사말</a>
+                    <a href="sub1_2.html" class="">사업분야 · 회사 비전</a>
+                    <!-- <a href="sub1_3.html" class="">회사 비전</a> -->
+                    <a href="sub1_4.html" class="">오시는 길</a>
+                </div>
+                <div class="">
+                    <p onclick="alert('ready'); return false;">SERVICE</p>
+                    <a href="sub2_1.html" class="" onclick="alert('ready'); return false;">사업수행 실적</a>
+                </div>
+                <div class="">
+                    <p>PRODUCT</p>
+                    <a href="sub3_1.html" class=""onclick="alert('ready'); return false;">제품소개</a>
+                    <a href="sub3_2.html" class=""onclick="alert('ready'); return false;">안전발걸음</a>
+                </div>
+                <div class="">
+                    <p onclick="alert('ready'); return false;">CONTACT</p>
+                    <a href="sub4_1.html" class=""onclick="alert('ready'); return false;">고객센터</a>
+                    <a href="sub4_2.html" class=""onclick="alert('ready'); return false;">협력문의</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_wrap">
+            <h1>
+                <a href="index.html"><img src="1x/logo.png" alt="ABLECNT"></a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="sub1_1.html">COMPANY</a>
+                        <ul class="depth">
+                            <li><a href="sub1_1.html">CEO 인사말</a></li>
+                            <li><a href="sub1_2.html">사업분야 · 회사 비전</a></li>
+                            <!-- <li><a href="sub1_3.html">회사 비전</a></li> -->
+                            <li><a href="sub1_4.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub2_1.html" onclick="alert('ready'); return false;">SERVICE</a>
+                        <ul class="depth">
+                            <li><a href="sub2_1.html"onclick="alert('ready'); return false;">사업수행 실적</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub3_1.html">PRODUCT</a>
+                        <ul class="depth">
+                            <li><a href="sub3_1.html">제품소개</a></li>
+                            <li><a href="app.html">안전발걸음</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub4_1.html" onclick="alert('ready'); return false;">CONTACT</a>
+                        <ul class="depth">
+                            <li><a href="sub4_1.html"onclick="alert('ready'); return false;">고객센터</a></li>
+                            <li><a href="sub4_2.html"onclick="alert('ready'); return false;">협력문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="r_menu">
+
+                <input type="checkbox" id="ham-toggle" hidden="">
+                <label for="ham-toggle" class="ham">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+  <main class="sub3_1" id="sub">
+   <section class="s1">
+    <img src="1x/sub3/sub3_bg.jpg" alt="상단배너" />
+    <div class="txt_wrap">
+     <h2>PRODUCT</h2>
+     <p>
+      언제나 최고 품질의 제품을 고객님들께 제공할 수 있도록<br />노력하는 (주) 로엔코리아
+     </p>
+    </div>
+   </section>
+   <!-- section 1 end -->
+
+   <section class="s2">
+       <div class="tab_wrap">
+        <div class="tab tabOn">ALL PRODUCT</div>
+        <div class="tab">PROCESSOR</div>
+        <div class="tab">DIGITAL</div>
+        <div class="tab">ANALOG</div>
+       </div>
+
+       <div class="product_wrap">
+           <form action="" class="search">
+            <input type="text" class="search_txt" placeholder="제품명을 검색해주세요.">
+            <button class="search_btn" type="submit">
+                <img src="1x/sub3/ic/ic_search.png" alt="돋보기">
+            </button>
+           </form>
+    
+           <div class="grid_wrap">
+            <div class="grid_item">
+                <img src="1x/sub3/product1.jpg" alt="제품">
+                <p>PROCESSOR MODULE</p>
+                <h4>MX 200</h4>
+                <p class="fs15">
+                    Processor modules of the MX200 series combine
+                    outstanding environmental robustness
+                    with very compact dimensions.
+                </p>
+                <div class="view">
+                    <a href="sub3_2.html">
+                        VIEW MORE
+                        <img src="1x/sub3/ic/ic_view.png" alt="view arrow">
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid_item">
+                <img src="1x/sub3/product1.jpg" alt="제품">
+                <p>PROCESSOR MODULE</p>
+                <h4>MX 200</h4>
+                <p class="fs15">
+                    Processor modules of the MX200 series combine
+                    outstanding environmental robustness
+                    with very compact dimensions.
+                </p>
+                <div class="view">
+                    <a href="sub3_2.html">
+                        VIEW MORE
+                        <img src="1x/sub3/ic/ic_view.png" alt="view arrow">
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid_item">
+                <img src="1x/sub3/product1.jpg" alt="제품">
+                <p>PROCESSOR MODULE</p>
+                <h4>MX 200</h4>
+                <p class="fs15">
+                    Processor modules of the MX200 series combine
+                    outstanding environmental robustness
+                    with very compact dimensions.
+                </p>
+                <div class="view">
+                    <a href="sub3_2.html">
+                        VIEW MORE
+                        <img src="1x/sub3/ic/ic_view.png" alt="view arrow">
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid_item">
+                <img src="1x/sub3/product1.jpg" alt="제품">
+                <p>PROCESSOR MODULE</p>
+                <h4>MX 200</h4>
+                <p class="fs15">
+                    Processor modules of the MX200 series combine
+                    outstanding environmental robustness
+                    with very compact dimensions.
+                </p>
+                <div class="view">
+                    <a href="sub3_2.html">
+                        VIEW MORE
+                        <img src="1x/sub3/ic/ic_view.png" alt="view arrow">
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid_item">
+                <img src="1x/sub3/product1.jpg" alt="제품">
+                <p>PROCESSOR MODULE</p>
+                <h4>MX 200</h4>
+                <p class="fs15">
+                    Processor modules of the MX200 series combine
+                    outstanding environmental robustness
+                    with very compact dimensions.
+                </p>
+                <div class="view">
+                    <a href="sub3_2.html">
+                        VIEW MORE
+                        <img src="1x/sub3/ic/ic_view.png" alt="view arrow">
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid_item">
+                <img src="1x/sub3/product1.jpg" alt="제품">
+                <p>PROCESSOR MODULE</p>
+                <h4>MX 200</h4>
+                <p class="fs15">
+                    Processor modules of the MX200 series combine
+                    outstanding environmental robustness
+                    with very compact dimensions.
+                </p>
+                <div class="view">
+                    <a href="sub3_2.html">
+                        VIEW MORE
+                        <img src="1x/sub3/ic/ic_view.png" alt="view arrow">
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid_item">
+                <img src="1x/sub3/product1.jpg" alt="제품">
+                <p>PROCESSOR MODULE</p>
+                <h4>MX 200</h4>
+                <p class="fs15">
+                    Processor modules of the MX200 series combine
+                    outstanding environmental robustness
+                    with very compact dimensions.
+                </p>
+                <div class="view">
+                    <a href="sub3_2.html">
+                        VIEW MORE
+                        <img src="1x/sub3/ic/ic_view.png" alt="view arrow">
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid_item">
+                <img src="1x/sub3/product1.jpg" alt="제품">
+                <p>PROCESSOR MODULE</p>
+                <h4>MX 200</h4>
+                <p class="fs15">
+                    Processor modules of the MX200 series combine
+                    outstanding environmental robustness
+                    with very compact dimensions.
+                </p>
+                <div class="view">
+                    <a href="sub3_2.html">
+                        VIEW MORE
+                        <img src="1x/sub3/ic/ic_view.png" alt="view arrow">
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid_item">
+                <img src="1x/sub3/product1.jpg" alt="제품">
+                <p>PROCESSOR MODULE</p>
+                <h4>MX 200</h4>
+                <p class="fs15">
+                    Processor modules of the MX200 series combine
+                    outstanding environmental robustness
+                    with very compact dimensions.
+                </p>
+                <div class="view">
+                    <a href="sub3_2.html">
+                        VIEW MORE
+                        <img src="1x/sub3/ic/ic_view.png" alt="view arrow">
+                    </a>
+                </div>
+            </div>
+           </div>
+       </div>
+
+    </div>
+   </section>
+   <!-- section s2 end -->
+  </main>
+
+  <footer>
+   <div class="footer_inner">
+    <div class="btn_wrap">
+     <div class="qlink">
+      <a href="app.html">
+       <img src="1x/qlink.png" alt="사이트바로가기" />
+      </a>
+     </div>
+     <div class="top">
+      <a href="#">
+       <img src="1x/top1.png" alt="gotop" />
+      </a>
+     </div>
+    </div>
+    <div class="f_left">
+     <img src="1x/logo.png" alt="에이블씨엔티" />
+     <div class="f_info">
+      <p><span class="m">CEO </span>우동주</p>
+      <p>
+       <span class="m">본사 </span>부산광역시 강서구 과학산단1로 60번길 2B동
+       207호
+      </p>
+      <p>
+       <span class="m">기술연구소 </span>부산광역시 강서구 과학산단1로 60번길 30
+       7동 601호
+      </p>
+      <div class="contact">
+       <p><span class="m">TEL </span> 051-123-456</p>
+       <p><span class="m">FAX </span> 051-123-456</p>
+       <p><span class="m">E-MAIL </span> loenkorea@loen.com</p>
+      </div>
+     </div>
+    </div>
+    <div class="f_right">
+     <ul>
+      <li>
+       <h5>COMPANY</h5>
+       <a href="sub1_1.html">CEO 인사말</a>
+       <a href="sub1_2.html">사업분야 · 회사 비전</a>
+       <a href="sub1_3.html" >회사 비전</a>
+       <a href="sub1_4.html">오시는길</a>
+      </li>
+
+      <li>
+       <h5>SERVICE</h5>
+       <a href="#" onclick="alert('ready'); return false;">사업수행 실적</a>
+      </li>
+
+      <li>
+       <h5>PRODUCT</h5>
+       <a href="sub3_1.html">제품소개</a>
+       <a href="app.html">안전발걸음</a>
+      </li>
+
+      <li>
+       <h5 >CONTACT</h5>
+       <a href="#" onclick="alert('ready'); return false;">고객센터</a>
+       <a href="#" onclick="alert('ready'); return false;">협력문의</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="copy">
+    <p>Copyrights © ABLECNT Co., Ltd. All rights reserved.</p>
+   </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+   AOS.init({
+    duration: 1200,
+   });
+  </script>
+  <script src="js/main.js"></script>
+  <script></script>
+ </body>
+</html>

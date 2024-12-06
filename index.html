@@ -1,0 +1,433 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로엔코리아</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="burgur_menu_wrap">
+            <div class="menu_wrap">
+                <div class="">
+                    <p>COMPANY</p>
+                    <a href="sub1_1.html" class="">CEO 인사말</a>
+                    <a href="sub1_2.html" class="">사업분야 · 회사 비전</a>
+                    <!-- <a href="sub1_3.html" class="">회사 비전</a> -->
+                    <a href="sub1_4.html" class="">오시는 길</a>
+                </div>
+                <div class="">
+                    <p onclick="alert('ready'); return false;">SERVICE</p>
+                    <a href="sub2_1.html" class="" onclick="alert('ready'); return false;">사업수행 실적</a>
+                </div>
+                <div class="">
+                    <p>PRODUCT</p>
+                    <a href="sub3_1.html" class=""onclick="alert('ready'); return false;">제품소개</a>
+                    <a href="sub3_2.html" class=""onclick="alert('ready'); return false;">안전발걸음</a>
+                </div>
+                <div class="">
+                    <p onclick="alert('ready'); return false;">CONTACT</p>
+                    <a href="sub4_1.html" class=""onclick="alert('ready'); return false;">고객센터</a>
+                    <a href="sub4_2.html" class=""onclick="alert('ready'); return false;">협력문의</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_wrap">
+            <h1>
+                <a href="index.html"><img src="1x/logo.png" alt="ABLECNT"></a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="sub1_1.html">COMPANY</a>
+                        <ul class="depth">
+                            <li><a href="sub1_1.html">CEO 인사말</a></li>
+                            <li><a href="sub1_2.html">사업분야 · 회사 비전</a></li>
+                            <!-- <li><a href="sub1_3.html">회사 비전</a></li> -->
+                            <li><a href="sub1_4.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub2_1.html" onclick="alert('ready'); return false;">SERVICE</a>
+                        <ul class="depth">
+                            <li><a href="sub2_1.html"onclick="alert('ready'); return false;">사업수행 실적</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub3_1.html">PRODUCT</a>
+                        <ul class="depth">
+                            <li><a href="sub3_1.html">제품소개</a></li>
+                            <li><a href="app.html">안전발걸음</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub4_1.html" onclick="alert('ready'); return false;">CONTACT</a>
+                        <ul class="depth">
+                            <li><a href="sub4_1.html"onclick="alert('ready'); return false;">고객센터</a></li>
+                            <li><a href="sub4_2.html"onclick="alert('ready'); return false;">협력문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="r_menu">
+
+                <input type="checkbox" id="ham-toggle" hidden="">
+                <label for="ham-toggle" class="ham">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="m1">
+            <!-- Slider main container -->
+            <div class="swiper M1swiper">
+                <div class="scroll">Scroll Down
+                    <div class="imgbox"><img src="1x/scroll_icon.png" alt="Scroll Down"></div>
+                </div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="1x/m1_s1.jpg" alt="슬라이드1">
+                        <div class="desc">
+                            <div class="fade">
+                                <h2>스마트 자동화 시스템 구축으로<br>
+                                    고객에게 <span class="b">최고의 가치를 제공</span>합니다.
+                                </h2>
+                            </div>
+                            <div class="fade">
+                                <p>혁신과 첨단 기술로 지속 가능한 미래를 만들어가는 글로벌 리더 로엔코리아는<br>
+                                    변화하는 시장에 빠르게 대응하며 , 고객에게 최고의 가치를 제공하는 것을 목표로 합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-scrollbar">
+                    <div class="slide_btn_wrap">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="m2">
+            <div class="sec_wrap">
+                <div class="title" data-aos="fade-in">
+                    <span>Business Areas</span>
+                    <h3>지속 가능한 내일을 위한<br>
+                        신재생에너지 솔루션</h3>
+                </div>
+
+                <ul class="m2_flex">
+                    <li data-aos="">
+                        <h4>Energy Business <img src="1x/m2_item1.png" alt="아이콘"></h4>
+                        <span class="line"></span>
+                        <p>로엔코리아는 신재생에너지 분야에서 다양한 사업을 전개하고 있는 기업으로,<br>
+                            지속 가능한 에너지 솔루션을 제공하는 데 중점을 두고 있습니다.</p>
+                    </li>
+                    <li data-aos="fade-right">
+                        <img src="1x/m2_item2.png" alt="">
+                        <h4>industry Business</h4>
+                        <p>로엔코리아는 다양한 산업 분야에서
+                            혁신적인 솔루션과 서비스를 제공하며,
+                            글로벌 경쟁력을 갖추고 있습니다.</p>
+                    </li>
+                    <li data-aos="fade-right">
+                        <img src="1x/m2_item3.png" alt="">
+                        <h4>maritime Business</h4>
+                        <p>로엔코리아는 해양 사업 분야에서
+                            선도적인 위치를 차지하며, 해양 개발과
+                            첨단 기술을 통한 혁신을 추구합니다.</p>
+                    </li>
+                    <li data-aos="fade-right">
+                        <img src="1x/m2_item4.png" alt="">
+                        <h4>wind Business</h4>
+                        <p>로엔코리아는 풍력 사업 분야에서
+                            혁신적인 기술과 전략을 통해 지속
+                            가능한 에너지 솔루션을 제공합니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="m3">
+            <div class="title" data-aos="fade-in">
+                <span>PRODUCT LIST</span>
+                <h3>Bachmann 제품소개</h3>
+                <p>로엔코리아는 신재생에너지 분야에서 다양한 사업을 전개하고 있는 기업으로,<br>
+                    지속 가능한 에너지 솔루션을 제공하는 데 중점을 두고 있습니다.</p>
+            </div>
+
+            <div class="swiper M3swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="1x/m3_pro1.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="bg" data-title="01"></div>
+                            <h4>MX 200</h4>
+                            <span class="line"></span>
+                            <p>MX207 / MX213 / MX220 +<br>
+                                ColdClimate Variants</p>
+                            <a href="#">VIEW MORE<i><img src="1x/a_icon.png" alt="링크이동"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="1x/m3_pro2.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="bg" data-title="02"></div>
+                            <h4>MX 200</h4>
+                            <span class="line"></span>
+                            <p>MX207 / MX213 / MX220 +<br>
+                                ColdClimate Variants</p>
+                            <a href="#">VIEW MORE<i><img src="1x/a_icon.png" alt="링크이동"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="1x/m3_pro3.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="bg" data-title="03"></div>
+                            <h4>MX 200</h4>
+                            <span class="line"></span>
+                            <p>MX207 / MX213 / MX220 +<br>
+                                ColdClimate Variants</p>
+                            <a href="#">VIEW MORE<i><img src="1x/a_icon.png" alt="링크이동"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="1x/m3_pro4.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="bg" data-title="04"></div>
+                            <h4>MX 200</h4>
+                            <span class="line"></span>
+                            <p>MX207 / MX213 / MX220 +<br>
+                                ColdClimate Variants</p>
+                            <a href="#">VIEW MORE<i><img src="1x/a_icon.png" alt="링크이동"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+
+        <section class="m4">
+            <div class="title" data-aos="fade-in">
+                <span>PARTNERSHIP</span>
+                <h3>주요 파트너사</h3>
+                <p>로엔코리아는 뛰어난 기술력과 안전성, 신뢰를 바탕으로<br>
+                    다양한 파트너사와 함께하고 있습니다.</p>
+            </div>
+
+            <ul class="flex_wrap">
+                <li><img src="1x/m4_brand1.png" alt=""></li>
+                <li><img src="1x/m4_brand2.png" alt=""></li>
+                <li><img src="1x/m4_brand3.png" alt=""></li>
+                <li><img src="1x/m4_brand4.png" alt=""></li>
+                <li><img src="1x/m4_brand1.png" alt=""></li>
+                <li><img src="1x/m4_brand2.png" alt=""></li>
+                <li><img src="1x/m4_brand3.png" alt=""></li>
+                <li><img src="1x/m4_brand4.png" alt=""></li>
+            </ul>
+        </section>
+
+        <section class="m5">
+            <div class="title">
+                <h3>CONTACT US</h3>
+                <p>미래를 생각하는 smart soliution기업, 로엔코리아는<br>
+                    언제나 고객님의 곁에서 미래를 향해 함께 나아갈 날을 기다립니다.</p>
+            </div>
+            <ul class="content">
+                <li data-aos="fade-up" data-aos-delay="100"><a href="#">브로슈어 <i><img src="1x/m5_down.png"
+                                alt="다운로드"></i></a></li>
+                <li data-aos="fade-up" data-aos-delay="200"><a href="#">고객센터 <i><img src="1x/m5_arrow.png"
+                                alt="바로가기"></i></a></li>
+                <li data-aos="fade-up" data-aos-delay="300"><a href="#">협력문의 <i><img src="1x/m5_arrow.png"
+                                alt="바로가기"></i></a></li>
+            </ul>
+        </section>
+
+    </main>
+
+  <footer>
+   <div class="footer_inner">
+    <div class="btn_wrap">
+     <div class="qlink">
+      <a href="app.html">
+       <img src="1x/qlink.png" alt="사이트바로가기" />
+      </a>
+     </div>
+     <div class="top">
+      <a href="#">
+       <img src="1x/top1.png" alt="gotop" />
+      </a>
+     </div>
+    </div>
+    <div class="f_left">
+     <img src="1x/logo.png" alt="에이블씨엔티" />
+     <div class="f_info">
+      <p><span class="m">CEO </span>우동주</p>
+      <p>
+       <span class="m">본사 </span>부산광역시 강서구 과학산단1로 60번길 2B동
+       207호
+      </p>
+      <p>
+       <span class="m">기술연구소 </span>부산광역시 강서구 과학산단1로 60번길 30
+       7동 601호
+      </p>
+      <div class="contact">
+       <p><span class="m">TEL </span> 051-123-456</p>
+       <p><span class="m">FAX </span> 051-123-456</p>
+       <p><span class="m">E-MAIL </span> loenkorea@loen.com</p>
+      </div>
+     </div>
+    </div>
+    <div class="f_right">
+     <ul>
+      <li>
+       <h5>COMPANY</h5>
+       <a href="sub1_1.html">CEO 인사말</a>
+       <a href="sub1_2.html">사업분야 · 회사 비전</a>
+       <a href="sub1_3.html" >회사 비전</a>
+       <a href="sub1_4.html">오시는길</a>
+      </li>
+
+      <li>
+       <h5>SERVICE</h5>
+       <a href="#" onclick="alert('ready'); return false;">사업수행 실적</a>
+      </li>
+
+      <li>
+       <h5>PRODUCT</h5>
+       <a href="sub3_1.html">제품소개</a>
+       <a href="app.html">안전발걸음</a>
+      </li>
+
+      <li>
+       <h5 >CONTACT</h5>
+       <a href="#" onclick="alert('ready'); return false;">고객센터</a>
+       <a href="#" onclick="alert('ready'); return false;">협력문의</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="copy">
+    <p>Copyrights © ABLECNT Co., Ltd. All rights reserved.</p>
+   </div>
+  </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script>
+        tabItem.forEach((item, index) => {
+            item.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                tabContent.forEach((content) => {
+                    content.classList.remove("active");
+                    content.classList.remove("on");
+                });
+
+                tabItem.forEach((content) => {
+                    content.classList.remove("active");
+                    content.classList.remove("on");
+                });
+
+                tabItem[index].classList.add("active", "on");
+                tabContent[index].classList.add("active", "on");
+            });
+        });
+    </script>
+    <script>
+        tabItem.forEach((item, index) => {
+            item.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                tabItem.forEach((tab) => { tab.classList.remove("active", "on") });
+                tabContent.forEach((content) => { content.classList.remove("active", "on") });
+
+                item.classList.add("active", "on");
+                tabContent[index].classList.add("active", "on");
+            })
+        })
+    </script>
+    <script>
+        const M1swiper = new Swiper('.M1swiper', {
+            loop: true,
+            autoplay: {
+                delay: 4500,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            effect: 'fade',
+        });
+
+        const M3swiper = new Swiper('.M3swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 2.3,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <script>
+        const ham = document.querySelector('.ham')
+        const siteMenu = document.querySelector('.burgur_menu_wrap');
+        ham.addEventListener('click', function () {
+            siteMenu.classList.toggle('view');
+        });
+    </script>
+</body>
+
+</html>
